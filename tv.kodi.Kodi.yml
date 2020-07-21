@@ -4,6 +4,9 @@ runtime-version: '19.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
+build-options:
+  env:
+    - SOURCE_DATE_EPOCH=1
 finish-args:
   - --device=all
   - --filesystem=xdg-music
