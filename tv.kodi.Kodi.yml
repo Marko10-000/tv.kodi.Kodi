@@ -46,6 +46,7 @@ modules:
   - deps/swig.json
   - deps/taglib.json
   - deps/tinyxml.json
+  - deps/libopenmpt.json
   - deps/ffmpeg.json
   - deps/flatbuffers.json
   - deps/libnfs.json
@@ -131,7 +132,6 @@ modules:
   - deps/glm.json
   - deps/libmodplug.json
   - deps/jsoncpp.json
-  - deps/libopenmpt.json
   - deps/nlohmann-json.json
   - deps/rtmpdump.json
   - deps/pycryptodome.json

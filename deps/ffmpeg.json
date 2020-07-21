@@ -12,7 +12,8 @@
         "--enable-vdpau",
         "--enable-postproc",
         "--enable-gnutls",
-        "--enable-gpl"
+        "--enable-gpl",
+        "--enable-libopenmpt"
     ],
     "cleanup": [
         "/include",
