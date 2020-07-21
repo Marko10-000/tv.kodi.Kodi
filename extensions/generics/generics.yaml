@@ -1,0 +1,34 @@
+name: generics-meta
+modules:
+  - deps/rtmpdump.json
+  - deps/tinyxml.json
+  - deps/glm.json
+  - addons/inputstream.adaptive.json
+  - addons/inputstream.rtmp.json
+  - addons/peripheral.joystick.json
+  - addons/peripheral.xarcade.json
+  - addons/screensaver.asteroids.json
+  - addons/screensaver.asterwave.json
+  - addons/screensaver.biogenesis.json
+  - addons/screensaver.greynetic.json
+  - addons/screensaver.matrixtrails.json
+  - addons/screensaver.pingpong.json
+  - addons/screensaver.pyro.json
+  - addons/screensaver.stars.json
+  - addons/vfs.rar.json
+  - addons/vfs.sacd.json
+  - addons/visualization.fishbmc.json
+  - addons/visualization.goom.json
+  - addons/visualization.shadertoy.json
+  - addons/visualization.spectrum.json
+  - addons/visualization.starburst.json
+  - addons/visualization.waveform.json
+  - name: generics-finalize
+    buildsystem: simple
+    build-commands:
+      - cp -rav /app/extensions/generics/lib64/. /app/extensions/generics/lib
+      - rm -rfv /app/extensions/generics/lib64
+      - rm -rfv /app/extensions/generics/lib/pkgconfig
+      - mv /app/extensions/generics/share/kodi/addons /app/extensions/generics/addons-share
+      - mv /app/extensions/generics/lib/kodi/addons /app/extensions/generics/addons-lib
+      - rm -rfv /app/extensions/generics/lib/kodi /app/extensions/generics/share /app/extensions/generics/include /app/extensions/generics/man

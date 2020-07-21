@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.gme",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.gme",
+            "tag": "2.0.3-Leia",
+            "commit": "e5b1ddef66e421f93613ae505f0c34311c08ad34"
+        }
+    ]
+}

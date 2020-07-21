@@ -1,0 +1,21 @@
+{
+    "name": "visualization.fishbmc",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "env": [
+            "CPLUS_INCLUDE_PATH=/app/include:/app/extensions/generics/include"
+        ],
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/visualization.fishbmc",
+            "tag": "5.1.2-Leia",
+            "commit": "1d4ee873ef820ea45967a59e68e8b1d2e0158014"
+        }
+    ]
+}

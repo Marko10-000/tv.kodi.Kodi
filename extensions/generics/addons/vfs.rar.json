@@ -1,0 +1,18 @@
+{
+    "name": "vfs.rar",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/vfs.rar",
+            "tag": "2.3.0-Leia",
+            "commit": "4862c160b1af24c32e5bef5a1531848956517933"
+        }
+    ]
+}

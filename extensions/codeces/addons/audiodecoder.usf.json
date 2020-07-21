@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.usf",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.usf",
+            "tag": "2.0.2-Leia",
+            "commit": "e82095e897c44e051f10bb4bbc5f707d8aff6134"
+        }
+    ]
+}

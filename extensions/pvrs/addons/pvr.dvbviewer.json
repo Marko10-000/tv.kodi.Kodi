@@ -1,0 +1,18 @@
+{
+    "name": "pvr.dvbviewer",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.dvbviewer",
+            "tag": "3.7.11-Leia",
+            "commit": "1ff63d43cbbc1e9133a9e84dec5b8e7f2c64fb17"
+        }
+    ]
+}

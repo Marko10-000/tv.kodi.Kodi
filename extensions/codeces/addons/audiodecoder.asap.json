@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.asap",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.asap",
+            "tag": "2.0.2-Leia",
+            "commit": "a969c156c07d31369110c04d61f6313a2b115321"
+        }
+    ]
+}

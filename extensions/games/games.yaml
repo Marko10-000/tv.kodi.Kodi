@@ -1,0 +1,11 @@
+name: games-meta
+modules:
+  - deps/tinyxml.json
+  - addons/game.libretro.json
+  - name: games-finalize
+    buildsystem: simple
+    build-commands:
+      - rm -rfv /app/extensions/games/lib/pkgconfig
+      - mv /app/extensions/games/share/kodi/addons /app/extensions/games/addons-share
+      - mv /app/extensions/games/lib/kodi/addons /app/extensions/games/addons-lib
+      - rm -rfv /app/extensions/games/lib/kodi /app/extensions/games/share /app/extensions/games/include

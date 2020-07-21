@@ -1,0 +1,35 @@
+name: pvrs-meta
+modules:
+  - deps/jsoncpp.json
+  - deps/tinyxml.json
+  - deps/tinyxml2.json
+  - deps/rapidxml.json
+  - deps/nlohmann-json.json
+  - addons/pvr.argustv.json
+  - addons/pvr.demo.json
+  - addons/pvr.dvblink.json
+  - addons/pvr.dvbviewer.json
+  - addons/pvr.filmon.json
+  - addons/pvr.hts.json
+  - addons/pvr.iptvsimple.json
+  - addons/pvr.mediaportal.tvserver.json
+  - addons/pvr.mythtv.json
+  - addons/pvr.nextpvr.json
+  - addons/pvr.njoy.json
+  - addons/pvr.octonet.json
+  - addons/pvr.pctv.json
+  - addons/pvr.sledovanitv.cz.json
+  - addons/pvr.stalker.json
+  - addons/pvr.teleboy.json
+  - addons/pvr.vbox.json
+  - addons/pvr.vdr.vnsi.json
+  - addons/pvr.vuplus.json
+  - addons/pvr.wmc.json
+  - addons/pvr.zattoo.json
+  - name: pvrs-finalize
+    buildsystem: simple
+    build-commands:
+      - rm -rfv /app/extensions/pvrs/lib/pkgconfig /app/extensions/pvrs/lib/cmake
+      - mv /app/extensions/pvrs/share/kodi/addons /app/extensions/pvrs/addons-share
+      - mv /app/extensions/pvrs/lib/kodi/addons /app/extensions/pvrs/addons-lib
+      - rm -rfv /app/extensions/pvrs/lib/kodi /app/extensions/pvrs/share /app/extensions/pvrs/include

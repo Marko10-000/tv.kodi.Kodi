@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.qsf",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.qsf",
+            "tag": "2.0.2-Leia",
+            "commit": "e6fd94a16dad33a905d84b8edebbda7181f69853"
+        }
+    ]
+}

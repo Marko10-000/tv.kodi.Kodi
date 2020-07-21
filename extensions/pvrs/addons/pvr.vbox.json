@@ -1,0 +1,18 @@
+{
+    "name": "pvr.vbox",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.vbox",
+            "tag": "4.7.0-Leia",
+            "commit": "3dacd89f0a44463b444c72f8adedbe18f3e48d43"
+        }
+    ]
+}

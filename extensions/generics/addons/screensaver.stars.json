@@ -1,0 +1,18 @@
+{
+    "name": "screensaver.stars",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/screensaver.stars",
+            "tag": "2.1.4-Leia",
+            "commit": "fa30f566294b705b3a30585c754dbc7441ad1693"
+        }
+    ]
+}

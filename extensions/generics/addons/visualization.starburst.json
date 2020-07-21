@@ -1,0 +1,21 @@
+{
+    "name": "visualization.starburst",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "env": [
+            "CPLUS_INCLUDE_PATH=/app/include:/app/extensions/generics/include"
+        ],
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/visualization.starburst",
+            "tag": "2.0.2-Leia",
+            "commit": "a14189ea3d6dea743f53a21cb8ece74a6560ecea"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.openmpt",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.openmpt",
+            "tag": "2.0.4-Leia",
+            "commit": "aa312dc3a857dad3ecc8f1962d4154231d47c6fb"
+        }
+    ]
+}

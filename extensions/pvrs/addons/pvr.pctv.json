@@ -1,0 +1,18 @@
+{
+    "name": "pvr.pctv",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.pctv",
+            "tag": "2.4.5-Leia",
+            "commit": "b60b971029d71e2169fecaccaa46a66624788d82"
+        }
+    ]
+}

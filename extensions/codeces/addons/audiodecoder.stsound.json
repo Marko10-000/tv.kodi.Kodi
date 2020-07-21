@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.stsound",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.stsound",
+            "tag": "2.0.2-Leia",
+            "commit": "daa97199830dc6698b54be87463161bb763f453f"
+        }
+    ]
+}

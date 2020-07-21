@@ -1,0 +1,18 @@
+{
+    "name": "screensaver.pyro",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/screensaver.pyro",
+            "tag": "3.0.1-Leia",
+            "commit": "fbf30756fcb72f5fe16469bf96b1e32c0cec1120"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "visualization.waveform",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "env": [
+            "CPLUS_INCLUDE_PATH=/app/include:/app/extensions/generics/include"
+        ],
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/visualization.waveform",
+            "tag": "3.1.1-Leia",
+            "commit": "21297d19032cba692834d14675869326a97ff793"
+        }
+    ]
+}

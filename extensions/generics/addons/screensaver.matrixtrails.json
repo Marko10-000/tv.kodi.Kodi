@@ -1,0 +1,18 @@
+{
+    "name": "screensaver.matrixtrails",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/screensaver.matrixtrails",
+            "tag": "2.2.3-Leia",
+            "commit": "0fca59700b53e3f7ab5fcfb6c8b395a286e40db7"
+        }
+    ]
+}

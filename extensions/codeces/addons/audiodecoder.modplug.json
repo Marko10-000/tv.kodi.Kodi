@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.modplug",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.modplug",
+            "tag": "2.0.3-Leia",
+            "commit": "1a810043bd9aa7fdf8961f86edea093791693d49"
+        }
+    ]
+}

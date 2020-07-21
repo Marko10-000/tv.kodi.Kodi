@@ -1,0 +1,18 @@
+{
+    "name": "pvr.argustv",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.argustv",
+            "tag": "3.5.4-Leia",
+            "commit": "83aa1e9c588b80cdef9b2bc062e554b7ba2e609d"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "pvr.dvblink",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.dvblink",
+            "tag": "4.7.2-Leia",
+            "commit": "ecc9cfdd5e32b37205804f757ea8d6a77ee2d768"
+        }
+    ]
+}

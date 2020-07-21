@@ -1,0 +1,18 @@
+{
+    "name": "pvr.wmc",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.wmc",
+            "tag": "2.4.5-Leia",
+            "commit": "b73b50f628f8516f53ec49450a54cd0b6d4fa9f3"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "audiodecoder.wsr",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/codeces"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/audiodecoder.wsr",
+            "tag": "2.0.2-Leia",
+            "commit": "146b2749dd38230a47a560e4d189bf942adab9b3"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+name: codeces-meta
+modules:
+  - deps/fluidsynth.json
+  - deps/libmodplug.json
+  - addons/audiodecoder.2sf.json
+  - addons/audiodecoder.asap.json
+  - addons/audiodecoder.dumb.json
+  - addons/audiodecoder.fluidsynth.json
+  - addons/audiodecoder.gme.json
+  - addons/audiodecoder.gsf.json
+  - addons/audiodecoder.modplug.json
+  - addons/audiodecoder.ncsf.json
+  - addons/audiodecoder.nosefart.json
+  - addons/audiodecoder.openmpt.json
+  - addons/audiodecoder.organya.json
+  - addons/audiodecoder.qsf.json
+  - addons/audiodecoder.snesapu.json
+  - addons/audiodecoder.ssf.json
+  - addons/audiodecoder.stsound.json
+  - addons/audiodecoder.timidity.json
+  - addons/audiodecoder.upse.json
+  - addons/audiodecoder.usf.json
+  - addons/audiodecoder.vgmstream.json
+  - addons/audiodecoder.wsr.json
+  - addons/audioencoder.flac.json
+  - addons/audioencoder.lame.json
+  - addons/audioencoder.vorbis.json
+  - addons/audioencoder.wav.json
+  - addons/imagedecoder.mpo.json
+  - name: codeces-finalize
+    buildsystem: simple
+    build-commands:
+      - cp -rav /app/extensions/codeces/lib64/. /app/extensions/codeces/lib
+      - rm -rfv /app/extensions/codeces/lib64
+      - rm -rfv /app/extensions/codeces/lib/pkgconfig
+      - mv /app/extensions/codeces/share/kodi/addons /app/extensions/codeces/addons-share
+      - mv /app/extensions/codeces/lib/kodi/addons /app/extensions/codeces/addons-lib
+      - rm -rfv /app/extensions/codeces/lib/kodi /app/extensions/codeces/share /app/extensions/codeces/include

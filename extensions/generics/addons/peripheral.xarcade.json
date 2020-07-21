@@ -1,0 +1,18 @@
+{
+    "name": "peripheral.xarcade",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-game/peripheral.xarcade",
+            "tag": "1.1.0-Leia",
+            "commit": "85a137b3a945c02b877e093391a8e1177442b11b"
+        }
+    ]
+}

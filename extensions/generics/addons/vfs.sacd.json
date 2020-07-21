@@ -1,0 +1,18 @@
+{
+    "name": "vfs.sacd",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/vfs.sacd",
+            "tag": "1.0.4-Leia",
+            "commit": "bea925fd493a0ebd94e9ff1ee3338ccd01ba2c4e"
+        }
+    ]
+}

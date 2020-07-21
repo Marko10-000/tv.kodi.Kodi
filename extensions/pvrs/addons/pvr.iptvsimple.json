@@ -1,0 +1,18 @@
+{
+    "name": "pvr.iptvsimple",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.iptvsimple",
+            "tag": "3.9.8-Leia",
+            "commit": "d170f47ad9bbd2f7c1b96f82a3ab3974fcaef054"
+        }
+    ]
+}

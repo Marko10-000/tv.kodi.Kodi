@@ -1,0 +1,18 @@
+{
+    "name": "pvr.mythtv",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/janbar/pvr.mythtv",
+            "tag": "5.10.15-Leia",
+            "commit": "286486fffca2a98745a62d92f836746ff6bebf9c"
+        }
+    ]
+}

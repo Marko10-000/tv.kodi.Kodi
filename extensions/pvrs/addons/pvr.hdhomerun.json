@@ -1,0 +1,18 @@
+{
+    "name": "pvr.hdhomerun",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.hdhomerun",
+            "tag": "3.5.0-Leia",
+            "commit": "a9d730977ec2d529262cd19d81f0230e1def136b"
+        }
+    ]
+}

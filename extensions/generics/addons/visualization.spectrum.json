@@ -1,0 +1,21 @@
+{
+    "name": "visualization.spectrum",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "env": [
+            "CPLUS_INCLUDE_PATH=/app/include:/app/extensions/generics/include"
+        ],
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/visualization.spectrum",
+            "tag": "3.0.3-Leia",
+            "commit": "f90160de8c0cff3c627eaae2994f6cec142e6f7c"
+        }
+    ]
+}

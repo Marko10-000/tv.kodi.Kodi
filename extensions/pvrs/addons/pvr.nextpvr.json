@@ -1,0 +1,18 @@
+{
+    "name": "pvr.nextpvr",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/pvrs"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/kodi-pvr/pvr.nextpvr",
+            "tag": "3.3.19-Leia",
+            "commit": "b4d0ebaafceded99b09da56b3dee906923045dab"
+        }
+    ]
+}

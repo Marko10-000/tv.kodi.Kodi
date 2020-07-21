@@ -1,0 +1,21 @@
+{
+    "name": "screensaver.asterwave",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "env": [
+            "CPLUS_INCLUDE_PATH=/app/include:/app/extensions/generics/include"
+        ],
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/screensaver.asterwave",
+            "tag": "3.0.4-Leia",
+            "commit": "415cbb4ce30514e39d9801701dd4848f4d58d51b"
+        }
+    ]
+}

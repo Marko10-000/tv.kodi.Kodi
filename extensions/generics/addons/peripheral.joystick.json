@@ -1,0 +1,18 @@
+{
+    "name": "peripheral.joystick",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "prefix": "/app/extensions/generics"
+    },
+    "config-opts": [
+        "-DOVERRIDE_PATHS=1"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/xbmc/peripheral.joystick",
+            "tag": "1.4.9-Leia",
+            "commit": "27d788f51b7257a8437253633e87c1d7db9ffecf"
+        }
+    ]
+}
